@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+        body {
+            margin: 0;
+            padding: 0;
+            background: url('Happy Birthday Risma Dhiva Syabila.png') no-repeat center center fixed;
+            background-size: cover;
+            font-family: 'Poppins', sans-serif;
+            color: #b56e6e;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            position: relative;
+            overflow: hidden;
+        }
+
+        h1 {
+            font-size: 4rem;
+            text-align: center;
+            margin: 0;
+            font-weight: 600;
+        }
+
+        h2 {
+            font-size: 3rem;
+            text-align: center;
+            margin: 10px 0;
+            font-weight: 400;
+        }
+
+        .gif-container {
+            margin: 20px 0;
+            cursor: pointer;
+        }
+
+        .gif-container img {
+            width: 200px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .gif-container img:hover {
+            transform: scale(1.1);
+        }
+
+        .floating-icon {
+            position: absolute;
+            animation: moveAround 8s linear infinite;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .floating-icon img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: 3px solid #ff6f61; /* Updated border color */
+            box-shadow: 0 5px 15px rgba(255, 111, 97, 0.6);
+            background-color: #ffffff; /* Added background for better visibility */
+        }
+
+        .floating-icon span {
+            display: block;
+            font-size: 1rem;
+            font-weight: 600;
+            color: #ff6f61; /* Updated text color */
+        }
+
+        @keyframes moveAround {
+            0% {
+                top: 20%;
+                left: 10%;
+            }
+            25% {
+                top: 30%;
+                left: 80%;
+            }
+            50% {
+                top: 60%;
+                left: 60%;
+            }
+            75% {
+                top: 70%;
+                left: 20%;
+            }
+            100% {
+                top: 20%;
+                left: 10%;
+            }
+        }
+
+        .footer {
+            font-size: 1.5rem;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Happy Birthday</h1>
+    <div class="gif-container" onclick="playVideo()">
+        <img src="GIF RISMA.gif" alt="GIF RISMA">
+    </div>
+    <h2>Risma Dhiva Syabila</h2>
+    <div class="floating-icon" onclick="openMessage()">
+        <img src="mail.png" alt="Mail Icon">
+        <span>Open This Message!</span>
+    </div>
+    <div class="footer">22th Birthday Celebration</div>
+
+    <script>
+        function playVideo() {
+            const videoUrl = 'Video RISMA.mp4'; // Replace with your video link
+            window.open(videoUrl, '_blank');
+        }
+
+        function openMessage() {
+alert('Dear Risma Dhiva Syabila,\n\nWihhh, happy birthday yang ke-22 ya, sayangku! 🥳🎂\n\nNggak kerasa kamu makin dewasa aja, tapi tetep aja selalu jadi pusat kebahagiaan aku. Di usia\nbarumu ini, aku harap semua cita-citamu jadi kenyataan, dan kamu selalu happy di setiap\nlangkahmu!\n\nMakasih banget udah jadi orang yang selalu ngerti aku, yang selalu bikin hariku cerah, meskipun\nkadang aku suka nyebelin. Aku bangga banget punya kamu di hidupku.\n\nNikmati harimu yang spesial ini ya, aku bakal pastiin hari ini penuh cinta dan tawa buat kamu.\nStay amazing, stay awesome, and always remember, kamu itu best banget di mata aku! 😘\n\nLove you to the moon and back');
+        }
+    </script>
+</body>
+</html>
